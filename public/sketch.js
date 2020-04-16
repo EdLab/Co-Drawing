@@ -32,9 +32,9 @@ let img;
 
 
 function preload() {
-  if (dataloaded){
+  // if (dataloaded){
     img = loadImage(imgURL);
-  }
+  // }
 }
 
 function setup() {
