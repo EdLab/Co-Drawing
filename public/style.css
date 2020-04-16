@@ -33,7 +33,6 @@ p {
 	margin: 0;
 	padding: 1.2vh;
 	color: white;
-	display: inline-block;
 	font-size: 15pt;
 	font-weight: 200;
 }
@@ -81,6 +80,18 @@ p {
 
 .artInfo {
 	display: none;
+}
+
+.artInfo img{
+	max-height: 60vh;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+.artInfo a{
+	color: #D2691E;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .logo-container img{

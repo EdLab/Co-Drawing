@@ -1,18 +1,75 @@
 {
+	"current_version":"v1",
 	"v1": [
 		{
+			"order": 0,
 			"title": "The Judgment Day",
 			"artist": "Aaron Douglas",
 			"year" : 1939,
-			"bgImg": "1_TheJudgmentDay-bg.jpg",
-			"infoImg": "1_TheJudgmentDay-bg.jpg"
+			"bgImg": "img/1_TheJudgmentDay-bg.jpg",
+			"infoImg": "img/1_TheJudgmentDay-info.jpg",
+			"cite": "NGA Online Editions, https://purl.org/nga/collection/artobject/166490",
+			"infoURL": "https://www.nga.gov/audio-video/audio/collection-highlights-east-building-verbal-description/the-judgment-day-douglas.html"
 		},
 		{
+			"order": 1,
 			"title": "The Judgment Day",
 			"artist": "Aaron Douglas",
 			"year" : 1939,
-			"bgImg": "1_TheJudgmentDay-bg.jpg",
-			"infoImg": "1_TheJudgmentDay-bg.jpg"
+			"bgImg": "img/1_TheJudgmentDay-bg.jpg",
+			"infoImg": "img/1_TheJudgmentDay-info.jpg",
+			"cite": "NGA Online Editions, https://purl.org/nga/collection/artobject/166490",
+			"infoURL": "https://www.nga.gov/audio-video/audio/collection-highlights-east-building-verbal-description/the-judgment-day-douglas.html"
+		},
+		{
+			"order": 2,
+			"title": "The Judgment Day",
+			"artist": "Aaron Douglas",
+			"year" : 1939,
+			"bgImg": "img/1_TheJudgmentDay-bg.jpg",
+			"infoImg": "img/1_TheJudgmentDay-info.jpg",
+			"cite": "NGA Online Editions, https://purl.org/nga/collection/artobject/166490",
+			"infoURL": "https://www.nga.gov/audio-video/audio/collection-highlights-east-building-verbal-description/the-judgment-day-douglas.html"
+		},
+		{
+			"order": 3,
+			"title": "The Judgment Day",
+			"artist": "Aaron Douglas",
+			"year" : 1939,
+			"bgImg": "img/1_TheJudgmentDay-bg.jpg",
+			"infoImg": "img/1_TheJudgmentDay-info.jpg",
+			"cite": "NGA Online Editions, https://purl.org/nga/collection/artobject/166490",
+			"infoURL": "https://www.nga.gov/audio-video/audio/collection-highlights-east-building-verbal-description/the-judgment-day-douglas.html"
+		},
+		{
+			"order": 4,
+			"title": "The Judgment Day",
+			"artist": "Aaron Douglas",
+			"year" : 1939,
+			"bgImg": "img/1_TheJudgmentDay-bg.jpg",
+			"infoImg": "img/1_TheJudgmentDay-info.jpg",
+			"cite": "NGA Online Editions, https://purl.org/nga/collection/artobject/166490",
+			"infoURL": "https://www.nga.gov/audio-video/audio/collection-highlights-east-building-verbal-description/the-judgment-day-douglas.html"
+		},
+		{
+			"order": 5,
+			"title": "The Judgment Day",
+			"artist": "Aaron Douglas",
+			"year" : 1939,
+			"bgImg": "img/1_TheJudgmentDay-bg.jpg",
+			"infoImg": "img/1_TheJudgmentDay-info.jpg",
+			"cite": "NGA Online Editions, https://purl.org/nga/collection/artobject/166490",
+			"infoURL": "https://www.nga.gov/audio-video/audio/collection-highlights-east-building-verbal-description/the-judgment-day-douglas.html"
+		},
+		{
+			"order": 6,
+			"title": "The Judgment Day",
+			"artist": "Aaron Douglas",
+			"year" : 1939,
+			"bgImg": "img/1_TheJudgmentDay-bg.jpg",
+			"infoImg": "img/1_TheJudgmentDay-info.jpg",
+			"cite": "NGA Online Editions, https://purl.org/nga/collection/artobject/166490",
+			"infoURL": "https://www.nga.gov/audio-video/audio/collection-highlights-east-building-verbal-description/the-judgment-day-douglas.html"
 		}
 	]
 }

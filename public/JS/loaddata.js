@@ -7,13 +7,28 @@ $(function () {
 	function loadData() {
 		$.getJSON('artworks.json')
 		.done( function(data) {
-			artData = data['v1'][0];
+			var dataVersion = data['current_version'];
+			// Get data based on UTC day
+			var d = new Date();
+			var n = d.getUTCDay();
+			artData = data[dataVersion][n];
 
-			imgURL = 'img/'+artData['bgImg'];
+			// load canvas image info
+			imgURL = artData['bgImg'];
 			dataloaded = true;
 
+			// load start page info
 			$('#about-link').html(artData['title']);
 			// $('#about-link').on('click', showInfo());
+
+			// load about page info
+			$('#infoImg').html('<img src="' + artData['infoImg'] + '" alt="painting">');
+
+			var info = '<i>' + artData['title'] + '</i>, ' + artData['artist'] + ', ' + artData['year'];
+			info += '<br><cite>' + artData['cite'] +'</cite><br>';
+			$('#info-content').html(info);
+
+			$('#infoURL a').attr("href", artData['infoURL']);
 
 		}).fail( function() {
 			$('body').html('Loading');
