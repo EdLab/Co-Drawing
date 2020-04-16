@@ -32,9 +32,10 @@ let img;
 
 
 function preload() {
-  if (dataloaded){
-    img = loadImage(imgURL);
-  }
+  // if (dataloaded){
+  //   img = loadImage(imgURL);
+  // }
+  img = loadImage('img/1_TheJudgmentDay-bg.jpg');
 }
 
 function setup() {
