@@ -32,10 +32,10 @@ let img;
 
 
 function preload() {
-  // if (dataloaded){
-  //   img = loadImage(imgURL);
-  // }
-  img = loadImage('img/1_TheJudgmentDay-bg.jpg');
+  if (dataloaded){
+    img = loadImage(imgURL);
+  }
+  // img = loadImage('img/1_TheJudgmentDay-bg.jpg');
 }
 
 function setup() {
@@ -113,7 +113,7 @@ function setup() {
   cnv.touchMoved(cnvDragged);
 
   background(255);
-  image(img, 0, 0, w, h);
+  // image(img, 0, 0, w, h);
 
   //drawing set up
   current = createVector(0,0);
