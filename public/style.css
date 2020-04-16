@@ -1,0 +1,214 @@
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+	min-height: 100%;
+	margin: 0px; 
+    padding: 0px;
+	background: black;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+button{
+	background-color: #fff;
+	border: none;
+	color: black;
+	padding: 8px 10px;
+	margin:8px;
+	width: 80px;
+	font-size: 16px;
+	text-decoration: none;
+}
+h1{
+	text-transform: uppercase;
+}
+h1,h2{
+	font-weight: 500;
+}
+
+p {
+	margin: 0;
+	padding: 1.2vh;
+	color: white;
+	display: inline-block;
+	font-size: 15pt;
+	font-weight: 200;
+}
+
+#credits{
+	position: fixed;/* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	display: none;
+}
+
+.credits-content{
+	margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 700px;
+	padding: 10px;
+	display: inline-block;
+}
+
+#about-link{
+	font-style: italic;
+	color: #D2691E;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.blink{
+	animation: blink 1.5s linear infinite;
+	cursor: pointer;
+}
+@keyframes blink{
+	0%{opacity: 0;}
+	50%{opacity: .5;}
+	100%{opacity: 1;}
+}
+
+.artInfo {
+	display: none;
+}
+
+.logo-container img{
+	width: 300px;
+	height: auto;
+	margin-top: 1.2vh;
+}
+
+@media only screen 
+  and (max-device-width: 1023px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+	h1{
+		font-size: 16pt;
+	}
+	h2{
+		font-size: 16pt;
+	}
+	p{
+		font-size: 14pt;
+		font-weight: 400;
+	}
+
+	.credits-content{
+		top: 50%;
+		width: 90%;
+	}
+}
+
+@media only screen 
+  and (max-device-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+	h1{
+		font-size: 36pt;
+	}
+	h2{
+		font-size: 32pt;
+	}
+	p {
+		font-size: 30pt;
+		font-weight: 400;
+	}
+	.credits-content{
+		width: 90%;
+	}
+	.logo-container img{
+		width: 600px;
+		height: auto;
+	}
+}
+
+
+
+#btnHolder{
+	width: 152px;
+	margin: 15px;
+    float: left;
+}
+#cnvHolder{
+    float: left;
+}
+
+.submitBtn{
+	background-color: #4CAF50;
+	color: white;
+}
+
+.resetBtn{
+	background-color: #f44336;
+	color: white;
+	margin-top: 30px;
+}
+
+.invalid{
+	background-color: #333;
+}
+
+#about-link:hover, a:hover, button:hover{
+	background-color: #D2691E;
+	color: white;
+}
+
+.redBtn, .blueBtn, .greenBtn, .yellowBtn, .blkBtn, .grayBtn, .colorBtn{
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.colorBtn.activeColor{
+	border-width: 15px;
+}
+
+@media (orientation:portrait ){
+	#btnHolder{
+		width: 100%;
+	}
+}
+
+@media only screen 
+  and (max-device-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+	#btnHolder{
+		width: 100%;
+	}
+
+	button{
+		padding: 20px;
+		margin:15px;
+		width: 200px;
+		font-size: 27pt;
+		text-decoration: none;
+	}
+
+	.redBtn, .blueBtn, .greenBtn, .yellowBtn, .blkBtn, .grayBtn, .colorBtn{
+		border: 4px solid white;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		float: left;
+		box-sizing: border-box;
+	}
+}
+
+
+

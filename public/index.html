@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Co-Drawing for Harlem Renaissance</title>
+    <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="JS/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="JS/loaddata.js"></script>
+    <script type="text/javascript" src="sketch.js"></script>
+    <script type="text/javascript" src="buttons.js"></script>
+    
+  </head>
+  <body>
+    <div id="btnHolder"></div>
+    <div id="cnvHolder"></div>
+
+    <div id="credits">
+      <div class="credits-content startInfo">
+        <h1>Harlem Renaissance 100<br>Collaborative Drawing<br></h1>
+        <h2>&bigstar; Today's Selection &bigstar; <br>
+          <span id="about-link" ></span>
+        </h2>
+        <p>Drag mouse or move your finger inside the canvas to draw</p>
+        <p>Click "Clear" button to start over and you won't affect others' canvas!</p>
+        <p>To save your artwork, use "Save" button on desktop or just screenshot on your mobile devices.</p>
+        <p class="blink">
+          <br>
+          Click to Start!
+          <br><br>
+        </p>
+        <p>
+          <cite>"We hope this online collaboration space will bring us together and have fun drawing here!"</cite> 
+          <br>- A message from the library team<br>
+        </p>
+        <div class="logo-container">
+          <img src="/img/logo.png" alt="logo">  
+        </div>
+      </div>
+
+      <div class="credits-content artInfo">
+        <h1>Harlem Renaissance 100<br>Collaborative Drawing<br></h1>
+        <h2>&bigstar; Today's Selection &bigstar; <br> <br>
+          <span id="about-link" ></span>
+        </h2>
+        <img src="" alt="painting" width="100%" height="auto">
+        <p>
+        To save your artwork, use "Save" button on desktop or just screenshot on your mobile devices. 
+        <br><br>
+        </p>
+        <p class="blink">
+          Click to go back to drawing!
+        </p>
+        <div class="logo-container">
+          <img src="/img/logo.png" alt="logo">  
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="interface.js"></script>
+
+  </body>
+</html>
