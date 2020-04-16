@@ -1,29 +1,22 @@
 function resetCanvas() {
   paths.splice(0);
-  background (255);
-  image(img, 0, 0, w, h);
+  myp5.background (255);
+  myp5.image(img, 0, 0, w, h);
 }
 
 
 function saveImg() {
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-  } 
-  else {
-    let y = year();
-    let mt = month();
-    let d = day();
-    let h = hour();
-    let m = minute();
-    let s = second();
-    var ImgName = str(y) + str(mt) + str(d) + str(h) + str(m) + str(s);
+  let y = myp5.year();
+  let mt = myp5.month();
+  let d = myp5.day();
+  let h = myp5.hour();
+  let m = myp5.minute();
+  let s = myp5.second();
+  var ImgName = myp5.str(y) + myp5.str(mt) + myp5.str(d) + myp5.str(h) + myp5.str(m) + myp5.str(s);
+  console.log(ImgName);
+  myp5.saveCanvas(ImgName,"png");
 
-    saveCanvas(ImgName,"png");
-    paths.splice(0);
-    background (255);
-    // image(img, 0, 0, w, h);
-  }
-  location.reload();
-
+  resetCanvas();
+  // window.location.reload(true);
 }

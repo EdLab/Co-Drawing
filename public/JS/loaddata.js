@@ -1,4 +1,4 @@
-var dataloaded = false;
+// var dataloaded = false;
 var artData;
 
 var imgURL;
@@ -15,7 +15,8 @@ $(function () {
 
 			// load canvas image info
 			imgURL = artData['bgImg'];
-			dataloaded = true;
+			startSketch();
+			// dataloaded = true
 
 			// load start page info
 			$('#about-link').html(artData['title']);
