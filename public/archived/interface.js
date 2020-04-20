@@ -12,6 +12,8 @@ document.addEventListener("touchmove", preventBehavior, {passive: false});
 //   console.info("window.performance works fine on this browser");
 // }
 var infoBox = document.getElementById("credits");
+var startInfo = document.getElementsByClassName("startInfo")[0];
+var artInfo = document.getElementsByClassName("artInfo")[0];
 
 if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
 	// console.info( "This page is reloaded");
@@ -49,15 +51,13 @@ infoBox.ontouchstart = function(event) {
   if (!isClickTitle && !isClickURL && !isTouchTitle && !isTouchURL){
     if(infoBox.style.display !== "none"){
       infoBox.style.display = "none";
+    
     }
   }
 }
 
 
 function showInfo() {
-  var startInfo = document.getElementsByClassName("startInfo")[0];
-  var artInfo = document.getElementsByClassName("artInfo")[0];
-
 	startInfo.style.display = "none";
 	artInfo.style.display = "inline-block";
   infoBox.style.display = "block";

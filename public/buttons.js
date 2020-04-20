@@ -17,6 +17,6 @@ function saveImg() {
   console.log(ImgName);
   myp5.saveCanvas(ImgName,"png");
 
-  resetCanvas();
+  // resetCanvas();
   // window.location.reload(true);
 }

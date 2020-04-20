@@ -19,8 +19,7 @@ $(function () {
 			// dataloaded = true
 
 			// load start page info
-			$('#about-link').html(artData['title']);
-			// $('#about-link').on('click', showInfo());
+			// $('#about-link').html(artData['title']);
 
 			// load about page info
 			$('#infoImg').html('<img src="' + artData['infoImg'] + '" alt="painting">');
@@ -29,7 +28,7 @@ $(function () {
 			info += '<br><cite>' + artData['cite'] +'</cite><br>';
 			$('#info-content').html(info);
 
-			$('#infoURL a').attr("href", artData['infoURL']);
+			$('#infoURL a:first-child').attr("href", artData['infoURL']);
 
 		}).fail( function() {
 			$('body').html('Loading');
