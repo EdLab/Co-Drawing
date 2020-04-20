@@ -45,7 +45,8 @@ infoBox.onclick = function(event) {
   if (!isClickTitle && !isClickURL && !isTouchTitle && !isTouchURL){
     if(infoBox.style.display !== "none"){
       if(startInfo.style.display !== "none"){
-        showInfo(event);
+        event.preventDefault();
+        showInfo();
       }else{
         infoBox.style.display = "none";
       }
@@ -65,7 +66,8 @@ infoBox.ontouchstart = function(event) {
   if (!isClickTitle && !isClickURL && !isTouchTitle && !isTouchURL){
     if(infoBox.style.display !== "none"){
       if(startInfo.style.display !== "none"){
-        showInfo(event);
+        event.preventDefault();
+        showInfo();
       }else{
         infoBox.style.display = "none";
       }
@@ -74,8 +76,7 @@ infoBox.ontouchstart = function(event) {
 }
 
 
-function showInfo(e) {
-  e.preventDefault();
+function showInfo() {
 	startInfo.style.display = "none";
 	artInfo.style.display = "inline-block";
   infoBox.style.display = "block";
