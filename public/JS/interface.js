@@ -15,13 +15,13 @@ var infoBox = document.getElementById("credits");
 var startInfo = document.getElementsByClassName("startInfo")[0];
 var artInfo = document.getElementsByClassName("artInfo")[0];
 
-// if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-// 	// console.info( "This page is reloaded");
-// } 
-// else {
+if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+	// console.info( "This page is reloaded");
+} 
+else {
 	// console.info( "This page is not reloaded");
 	infoBox.style.display = "block";
-// }
+}
 
 
 var titleLink = document.getElementById("about-link");
