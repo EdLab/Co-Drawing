@@ -28,7 +28,7 @@ io.sockets.on('connection',
     socket.on('mouse',
       function(data) {
         // Data comes in as whatever was sent, including objects
-        console.log("Received: 'mouse' " + data.x0 + " " + data.y0 + " " + data.f0 );
+        // console.log("Received: 'mouse' " + data.x0 + " " + data.y0 + " " + data.f0 );
       
         // Send it to all other clients
         socket.broadcast.emit('mouse', data);

@@ -30,8 +30,9 @@ $(function () {
 
 			$('#infoURL a:first-child').attr("href", artData['infoURL']);
 
-		}).fail( function() {
+		}).fail( function(d, textStatus, error) {
 			$('body').html('Loading');
+			console.error("getJSON failed, status: " + textStatus + ", error: "+error);
 		});
 	}
 	loadData();
