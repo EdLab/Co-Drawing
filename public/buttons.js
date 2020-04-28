@@ -29,4 +29,35 @@ function saveImg() {
   http.send(JSON.stringify({image: myp5.canvas.toDataURL(), ImgName  }))
   // resetCanvas();
   // window.location.reload(true);
+
+  var submitBox = document.getElementById("submitBox");
+  var desktopBox = document.getElementById("desktop-box");
+  var span = desktopBox.getElementsByClassName("close")[0];
+
+  desktopBox.style.display = "inline-block";
+  submitBox.style.display = "block";
+
+  span.onclick = function() {
+    submitBox.style.display = "none";
+  }
+  span.ontouchstart = function() {
+    submitBox.style.display = "none";
+  }
+  
+}
+
+function showSubmit(){
+  var submitBox = document.getElementById("submitBox");
+  var mobileBox = document.getElementById("mobile-box");
+  var span = mobileBox.getElementsByClassName("close")[0];
+
+  mobileBox.style.display = "inline-block";
+  submitBox.style.display = "block";
+
+  span.onclick = function() {
+    submitBox.style.display = "none";
+  }
+  span.ontouchstart = function() {
+    submitBox.style.display = "none";
+  }
 }

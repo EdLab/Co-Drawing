@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Co-Drawing for Harlem Renaissance</title>
     <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
@@ -15,17 +17,19 @@
     
   </head>
   <body>
-    <div id="btnHolder"></div>
-    <div id="cnvHolder"></div>
+    <div class="content">
+      <div id="btnHolder">
+        <div id="colorBtns"></div>
+        <div id="functionBtns"></div>
+      </div>
+      <div id="cnvHolder"></div>
+    </div>
 
     <div id="credits">
       <div class="credits-content startInfo">
         <h1>Harlem Renaissance 100<br>Collaborative Drawing<br></h1>
         <h2><a target="_blank" href="https://library.tc.columbia.edu/news/1873?l=homepage" id="about-link">
-          &bigstar; Library Book Displays &bigstar;
-        </a>
-        <!-- <span id="about-link"></span> -->
-        </h2>
+          &bigstar; Library Book Displays &bigstar;</a></h2>
         <p>Drag mouse or move your finger inside the canvas to draw</p>
         <p>Click "Clear" button to start over and you won't affect others' canvas!</p>
         <p>To save your artwork, use "Save" button on desktop or just screenshot on your mobile devices.</p>
@@ -56,6 +60,28 @@
         </p>
       </div>
 
+    </div>
+
+    <div id="submitBox">
+      <div id="desktop-box">
+        <div class="content">
+          <span class="close">&times;</span>
+          <h2>Congrats! <br>Your Artwork is Saved!</h2>
+          <p>Please send your artwork as an image attachment to us through the <a target="_blank" href="https://support.library.tc.columbia.edu/support/tickets/new">library ticket system</a><br><br></p>
+          <a class="button dark" target="_blank" href="https://support.library.tc.columbia.edu/support/tickets/new">Send Now</a>
+          <p class="caution">*By sending the content, you give the Gottesman Libraries permission to use your submission for future exhibits.</p>
+        </div>
+      </div>
+
+      <div id="mobile-box">
+        <div class="content">
+          <span class="close">&times;</span>
+          <h2>Please take a screeshot on your device to save your work first!</h2>
+          <p>Send the image to us through the <a target="_blank" href="https://support.library.tc.columbia.edu/support/tickets/new">library ticket system</a><br><br></p>
+          <a class="button dark" target="_blank" href="https://support.library.tc.columbia.edu/support/tickets/new">Send Now</a>
+          <p class="caution">*By sending the content, you give the Gottesman Libraries permission to use your submission for future exhibits.</p>
+        </div>
+      </div>
     </div>
 
     <script type="text/javascript" src="JS/interface.js"></script>
