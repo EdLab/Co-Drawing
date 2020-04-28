@@ -1,6 +1,12 @@
 // Using express: http://expressjs.com/
 var express = require('express');
 var app = express();
+var AWS = require('aws-sdk')
+var fs = require('fs')
+const bodyParser = require('body-parser');
+app.use(bodyParser.json({limit: '50mb'}));
+
+let {accessKeyId, secretAccessKey, Bucket} = process.env
 
 // Set up the server
 // process.env.PORT is related to deploying on heroku
@@ -13,6 +19,33 @@ function listen() {
 
 app.use(express.static('public'));
 
+
+app.post('/submit', function(req, res) {
+  let body = req.body
+  console.log(Object.keys(body))
+  const s3 = new AWS.S3({
+    accessKeyId,
+    secretAccessKey
+  })
+
+  let buf = Buffer.from(req.body.image.replace(/^data:image\/\w+;base64,/, ""),'base64')
+  var params = {
+    Bucket,
+    Key: `s3-${body.ImgName}.png`, 
+    Body: buf,
+    ContentEncoding: 'base64',
+    ContentType: 'image/png'
+  };
+
+
+
+  s3.upload(params, function(err, data) {
+      if (err) {
+          throw err;
+      }
+      console.log(`File uploaded successfully. ${data.Location}`);
+  });
+})
 
 // WebSocket Portion
 // WebSockets work with the HTTP server
