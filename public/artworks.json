@@ -1,5 +1,5 @@
 {
-	"current_version":"v1",
+	"current_version":"v2",
 	"v1": [
 		{
 			"order": 0,
@@ -70,6 +70,78 @@
 			"infoImg": "img/6_HarlemStreetScene-info.jpg",
 			"cite": "Schomburg Center for Research in Black Culture, Art and Artifacts Division, The New York Public Library",
 			"infoURL": "https://www.aaa.si.edu/collections/interviews/oral-history-interview-charles-henry-alston-11460"
+		}
+	],
+	"v2": [
+		{
+			"order": 0,
+			"title": "Aspects of Negro Life: The Negro in an African Setting",
+			"artist": "Aaron Douglas",
+			"year" : "1934",
+			"bgImg": "img/v2/0_NegroInAnAfricanSetting-bg.jpg",
+			"infoImg": "img/v2/0_NegroInAnAfricanSetting-info.jpg",
+			"cite": "Schomburg Center for Research in Black Culture, Art and Artifacts Division, The New York Public Library",
+			"infoURL": "https://www.theartstory.org/artist/douglas-aaron/artworks/"
+		},
+		{
+			"order": 1,
+			"title": "Opportunity: journal of Negro life, January 1926, [Front cover]",
+			"artist": "Gwendolyn Bennett",
+			"year" : "1926",
+			"bgImg": "img/v2/1_OpportunityJan1926-bg.jpg",
+			"infoImg": "img/v2/1_OpportunityJan1926-info.jpeg",
+			"cite": "Schomburg Center for Research in Black Culture, Art and Artifacts Division, The New York Public Library",
+			"infoURL": "https://digitalcollections.nypl.org/items/2180fea0-5914-0130-a34a-58d385a7bbd0"
+		},
+		{
+			"order": 2,
+			"title": "Drawing in Two Colors",
+			"artist": "Winold Reiss",
+			"year" : "1915-1920",
+			"bgImg": "img/v2/2_DrawingInTwoColors-bg.jpg",
+			"infoImg": "img/v2/2_DrawingInTwoColors-info.jpg",
+			"cite": "Library of Congress, Winold Reiss Collection",
+			"infoURL": "https://www.britannica.com/biography/Winold-Reiss"
+		},
+		{
+			"order": 3,
+			"title": "Stud Poker",
+			"artist": "Charles Henry Alston",
+			"year" : "1935-1943",
+			"bgImg": "img/v2/3_StudPoker-bg.jpg",
+			"infoImg": "img/v2/3_StudPoker-info.jpg",
+			"cite": "Schomburg Center for Research in Black Culture, Art and Artifacts Division, The New York Public Library",
+			"infoURL": "https://www.metmuseum.org/art/collection/search/371994"
+		},
+		{
+			"order": 4,
+			"title": "Aspects of Negro Life: Song of the Towers",
+			"artist": "Aaron Douglas",
+			"year" : "1934",
+			"bgImg": "img/v2/4_SongOfTheTowers-bg.jpg",
+			"infoImg": "img/v2/4_SongOfTheTowers-info.jpg",
+			"cite": "Schomburg Center for Research in Black Culture, Art and Artifacts Division, The New York Public Library",
+			"infoURL": "https://www.theartstory.org/artist/douglas-aaron/artworks/"
+		},
+		{
+			"order": 5,
+			"title": "Looking Upward",
+			"artist": "James Lesesne Wells",
+			"year" : "1928",
+			"bgImg": "img/v2/5_LookingUpward-bg.jpg",
+			"infoImg": "img/v2/5_LookingUpward-info.jpg",
+			"cite": "Smithsonian American Art Museum",
+			"infoURL": "https://americanart.si.edu/artwork/looking-upward-33802"
+		},
+		{
+			"order": 6,
+			"title": "Untitled Woodcut Print",
+			"artist": "Winold Reiss",
+			"year" : "1919",
+			"bgImg": "img/v2/6_UntitledWoodcutPrint-bg.jpg",
+			"infoImg": "img/v2/6_UntitledWoodcutPrint-info.jpg",
+			"cite": "Library of Congress, Winold Reiss Collection",
+			"infoURL": "https://www.britannica.com/biography/Winold-Reiss"
 		}
 	]
 }
